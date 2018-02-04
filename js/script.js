@@ -13,7 +13,6 @@ function addTask(text){
     let todoBar = document.createElement('div');
     todoBar.classList.add('todoElementBar');
     
-    
     //Date
     
     let todoDate = document.createElement('div');
@@ -72,4 +71,3 @@ document.addEventListener('DOMContentLoaded', function(){
     });
     
 });
-
