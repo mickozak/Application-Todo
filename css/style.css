@@ -1,1 +1,132 @@
+body, html {
+    margin: 0 0 0 0;
+    position: relative;
+    background: #ffe5b4;
+    font-family: sans-serif, monospace;
+}
 
+img {
+    border: none;
+}
+
+.todoCon {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.todoForm {
+    font-family: monospace;
+    box-shadow: 0.1rem 0.1rem 0.2rem rgba(0,0,0,0.3);
+    padding: 1rem;
+    background: #fff;
+}
+
+.todoFormRow {
+    overflow: hidden;
+}
+
+.todoFormLabel {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.todoFormMessage {
+    height: 8rem;
+    width: 55.9rem;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 0.01rem solid #000000;
+    resize: vertical;
+    font-family: monospace;
+}
+
+.todoFormButton {
+    background: #ff7f50;
+    color: #000000;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    float: left;
+    padding: 0.6rem 3rem;
+    margin-top: 0.6rem;
+    text-transform: uppercase;
+    font-size: 0,8rem;
+    transition:0.6s all;
+}
+
+.todoFormButton:hover {
+    background: #c73c07
+}
+
+.todoListCnt{
+    background: #fff;
+    font-family: monospace;
+    margin: 1.2rem 0;
+    box-shadow: 0.1rem 0.1rem 0.2rem rgba(0,0,0,0.3);
+    padding: 1rem 2rem;
+}
+
+.todoListHeader{
+    display: flex;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content:space-between
+}
+
+.todoList{
+    margin: 0 0;
+    font-size: 1.2rem;
+}
+
+.todoElement{
+    border-top: 0.1rem solid #ddd;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.todoElementBar{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todoElementDate{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.todoElementDelete{
+    background: #ff7f50;
+    color: #000000;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    float: left;
+    padding: 0.6rem 3rem;
+    margin-top: 0.6rem;
+    text-transform: uppercase;
+    font-size: 0,8rem;
+    transition:0.6s all;
+}
+
+.todoElementDelete:hover {
+    background: #c73c07
+}
+
+
+.todoElementText {
+    color: #000000;
+    font-size: 0.8rem;
+}
