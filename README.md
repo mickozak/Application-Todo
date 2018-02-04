@@ -2,4 +2,4 @@ The application is used to add simple tasks. Thanks to the application, you will
 
 
 
-Used technologies: HTML, CSS, JavaScript
+Used technologies: HTML, CSS, JavaScript.
