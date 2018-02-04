@@ -4,30 +4,57 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Application Todo</title>
-        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
     
-        <div class="todo-cnt">
+        <div class="todoCon">
             
-<!--Form for adding tasks-->
+            <h1>project todo</h1>
             
             <form class="todoForm" id="todoForm">
             
+            <!--Form for adding tasks--> 
+                
                 <div class="todoFormRow">
-                    <label class="todoFormLabel" for="todoMessage">Enter the content of the task.</label>
-                    <textarea class="todoFromMessage" name="todoMessage" id="todoMessage"></textarea>
+                    
+                    <label class="todoFormLabel" for="todoMessage">enter the content of the task...</label>
+                    
+                    <textarea class="todoFormMessage" name="todoMessage" id="todoMessage"></textarea>
+                    
                 </div>
                 
                 <div class="todoFormRow">
-                    <button type="submit" class="todoFormButton button">Add</button>
+                    
+                    <button type="submit" class="todoFormButton button">add</button>
+                    
+                </div>
+                
+            </form>    
+            
+            <!--to-do List--> 
+            
+            <section class="todoListCnt">
+            
+                <header class="todoListHeader">
+                
+                    <h2 class="todoListTitle">
+                        list
+                    </h2>
+                      
+                 </header>
+            
+                <div id="todoList" class="todoList">
+                   
                 </div>
             
-            </form>    
+            </section>
              
         </div>
     
         <script src="js/script.js"></script>
+        
     </body>
+    
 </html>
