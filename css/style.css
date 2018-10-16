@@ -1,131 +1,83 @@
-body, html {
-    margin: 0 0 0 0;
-    position: relative;
-    background: #ffe5b4;
-    font-family: sans-serif, monospace;
+body {
+    background: #ecf0f1;
+    padding-top: 3rem;
 }
 
-img {
-    border: none;
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.1rem;
 }
 
-.todoCon {
-    max-width: 60rem;
-    margin: 0 auto;
+#array-elements{
+    display: flex;
+    justify-content: center;
 }
 
-h1 {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-}
-
-.todoForm {
-    font-family: monospace;
-    box-shadow: 0.1rem 0.1rem 0.2rem rgba(0,0,0,0.3);
-    padding: 1rem;
-    background: #fff;
-}
-
-.todoFormRow {
-    overflow: hidden;
-}
-
-.todoFormLabel {
-    display: block;
-    font-size: 1rem;
-    margin-bottom: 0.2rem;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-}
-
-.todoFormMessage {
-    height: 8rem;
-    width: 55.9rem;
-    margin: 0 auto;
-    padding: 1rem;
-    border: 0.01rem solid #000000;
-    resize: vertical;
-    font-family: monospace;
-}
-
-.todoFormButton {
-    background: #ff7f50;
-    color: #000000;
-    border: none;
-    border-radius: 0.6rem;
-    cursor: pointer;
+.box {
+    background: white;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    border-top: 5px solid #1abc9c;
     float: left;
-    padding: 0.6rem 3rem;
-    margin-top: 0.6rem;
-    text-transform: uppercase;
-    font-size: 0,8rem;
-    transition:0.6s all;
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-.todoFormButton:hover {
-    background: #c73c07
+.box:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.todoListCnt{
-    background: #fff;
-    font-family: monospace;
-    margin: 1.2rem 0;
-    box-shadow: 0.1rem 0.1rem 0.2rem rgba(0,0,0,0.3);
-    padding: 1rem 2rem;
-}
-
-.todoListHeader{
-    display: flex;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    align-items: center;
-    justify-content:space-between
-}
-
-.todoList{
-    margin: 0 0;
-    font-size: 1.2rem;
-}
-
-.todoElement{
-    border-top: 0.1rem solid #ddd;
-    margin-top: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.todoElementBar{
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.todoElementDate{
+.box h2 {
     margin: 0;
-    font-size: 1rem;
-    font-weight: normal;
+    text-align: center;
 }
 
-.todoElementDelete{
-    background: #ff7f50;
-    color: #000000;
-    border: none;
-    border-radius: 0.6rem;
-    cursor: pointer;
-    float: left;
-    padding: 0.6rem 3rem;
-    margin-top: 0.6rem;
-    text-transform: uppercase;
-    font-size: 0,8rem;
-    transition:0.6s all;
+.box h3 {
+    margin: 0;
 }
 
-.todoElementDelete:hover {
-    background: #c73c07
+.box-array {
+    max-width: none;
+    border-top: 0;
+    border-left: 4px solid #2c3e50;
+    margin-bottom: 3rem;
 }
 
-.todoElementText {
-    color: #000000;
-    font-size: 0.8rem;
+.btn > svg  {
+    margin-right: 0.5rem;
 }
+
+.box-actions {
+    text-align: right;
+}
+
+.box-actions .btn > svg, .input-group .btn > svg {
+    margin-right: 0;
+}
+
+.col-3{
+    padding: 1rem;
+}
+
+.col-3:nth-child(6n + 2) .box {
+    border-top-color: #f1c40f;
+}
+
+.col-3:nth-child(6n + 3) .box {
+    border-top-color: #3498db;
+}
+
+.col-3:nth-child(6n + 4) .box {
+    border-top-color: #9b59b6;
+}
+
+.col-3:nth-child(6n + 5) .box {
+    border-top-color: #7f8c8d;
+}
+
+.col-3:nth-child(6n + 6) .box {
+    border-top-color: #e74c3c;
+}
+
