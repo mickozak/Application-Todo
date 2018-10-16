@@ -1,60 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Application Todo</title>
-        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/main.css">
+        <title>To Do List</title>
     </head>
-
     <body>
-    
-        <div class="todoCon">
-            
-            <h1>project todo</h1>
-            
-            <form class="todoForm" id="todoForm">
-            
-            <!--Form for adding tasks--> 
-                
-                <div class="todoFormRow">
-                    
-                    <label class="todoFormLabel" for="todoMessage">enter the content of the task...</label>
-                    
-                    <textarea class="todoFormMessage" name="todoMessage" id="todoMessage"></textarea>
-                    
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Tasks to be done:</h1>
+                    <div id="array" class="box box-array">
+                    </div>
                 </div>
-                
-                <div class="todoFormRow">
-                    
-                    <button type="submit" class="todoFormButton button">add</button>
-                    
-                </div>
-                
-            </form>    
-            
-            <!--to-do List--> 
-            
-            <section class="todoListCnt">
-            
-                <header class="todoListHeader">
-                
-                    <h2 class="todoListTitle">
-                        list
-                    </h2>
-                      
-                 </header>
-            
-                <div id="todoList" class="todoList">
-                   
-                </div>
-            
-            </section>
-             
+            </div>
         </div>
-    
-        <script src="js/script.js"></script>
-        
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>
+                        Tasks:
+                    </h1>
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <div class="input-group">
+                                <input id="element-name" type="text" class="form-control" placeholder="Enter the task to be done...">
+                                <div class="input-group-append">
+                                    <button class="btn btn-success" onclick="pushElement();" type="button"><i class="fas fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 text-right">
+                            <button class="btn btn-danger ml-3 float-right" onclick="removeFirst();"><i class="fas fa-trash"></i>Delete first</button>
+                            <button class="btn btn-danger ml-3 float-right" onclick="removeLast();"><i class="fas fa-trash"></i>Delete last</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="array-elements" class="row">
+            </div>
+
+            <p>*Some functions do not work on the first task.</p>
+        </div>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
     </body>
-    
 </html>
