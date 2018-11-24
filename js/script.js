@@ -1,4 +1,4 @@
-var arr = ["Cooking", "Shopping", "Homework"];
+var arr = ["Cooking", "Shopping", "Homework", "Washing"];
 
 updateView();
 
